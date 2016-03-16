@@ -9,7 +9,11 @@ body {
 }
 
 body.splash {
-  background:url(../homebg.gif) top center no-repeat #000;
+  background:url(/img/homebg.gif) top center no-repeat #000;
+}
+
+body.splash #titlebottom a {
+  display: none;
 }
 
 
@@ -51,12 +55,12 @@ h2, h3, h4 {
 
 #lefthead, #righthead, #leftfoot, #rightfoot {
   width:40px;
-  height:40px; 
+  height:40px;
 }
 #lefthead {
   float:left;
   border-bottom:1px solid #fff;
-  border-right:1px solid #fff; 
+  border-right:1px solid #fff;
   margin:8px 0 0 4%;
 }
 
@@ -118,7 +122,7 @@ h2, h3, h4 {
 }
 
 #maincol p {
-  
+
 }
 
 #centerthis {
@@ -186,7 +190,7 @@ h1.heading a:hover {
 }
 
 #nrintro p {
-  margin-top:0; 
+  margin-top:0;
   margin-bottom:1em;
 }
 
@@ -329,7 +333,7 @@ vertical-align:middle;
   width:915px;
   clear:both;
   text-transform:uppercase;
-  
+
 }
 
 
@@ -389,4 +393,10 @@ vertical-align:middle;
 	float:left;
 	padding:6px;
 	margin-bottom:1em;
+}
+
+#awardspublications {
+  display: block;
+  width: 100%;
+  float: left;
 }
