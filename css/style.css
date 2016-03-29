@@ -269,6 +269,28 @@ ul li {
   float:right;
 }
 
+.navigation_arrow {
+  position: fixed;
+  top: 30%;
+}
+
+.navigation_arrow.back {
+  left: 2%;
+}
+
+.navigation_arrow.next {
+  right: 2%;
+}
+
+.navigation_arrow img {
+  opacity: .5;
+}
+
+.navigation_arrow:hover img,
+.navigation_arrow a:focus img {
+  opacity: 1;
+}
+
 /* Splash page */
 body.splash {
   background:url(/img/homebg.gif) top center no-repeat rgba(26, 26, 26, 1);
@@ -276,6 +298,10 @@ body.splash {
 
 body.splash #titlebottom a {
   display: none;
+}
+
+body.splash .navigation_arrow {
+  opacity: 0;
 }
 
 .keywords {
