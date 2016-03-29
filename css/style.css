@@ -29,9 +29,15 @@ h2 {
   text-transform:uppercase;
   font-weight:normal;
   font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  line-height:1.6em;
+}
+
+h1 {
   color: #d83627;
 }
 
+h2,
 a,
 strong {
   color: #BBB;
@@ -281,6 +287,7 @@ h1.heading {
   margin-bottom:170px;
   line-height:1.3;
   font-weight:bold;
+  text-align: center;
 }
 
 h1.heading a {
@@ -329,45 +336,81 @@ h1.heading a:focus {
 }
 
 /* individual project page */
-#leftgallery {
-  width:380px;
-  float:left;
-}
-
-#gallery {
-  clear:both;
-  margin-top:1em;
+.row {
+  padding: 0;
+  margin: 0 auto;
+  width:80%;
+  max-width: 820px;
+  min-width: 250px;
+  list-style: none;
   text-align:justify;
-  width:380px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-#gallery a {
-  text-decoration:none;
+.row .gallery,
+.row h1,
+.row h2,
+.row p {
+  width: 100%;
+  text-align: left;
 }
 
-#gallery img {
-  margin-bottom:12px;
+.leftcolumn,
+.rightcolumn {
+  width: 45%;
+}
+
+.leftcolumn {
+  margin-right: 10%;
+  text-align: left;
+}
+
+.gallery {
+  padding: 0;
+  margin: 1em 0 0 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gallery_thumb {
+  display: inline-block;
+  text-align: center;
+  margin: 0.2em;
+}
+
+.gallery_thumb a {
+  text-decoration: none;
+}
+
+.gallery_thumb img {
   border:2px solid rgba(26, 26, 26, 0.8);
 }
-#gallery a:hover img,
-#gallery a:focus img {
+
+.gallery_thumb a:hover img {
   border:2px solid #ccc;
 }
 
-#fullsize {
-  float:right;
-  margin-right:4px;
-  padding-bottom:20px;
-  width:400px;
-  text-align:right;
-}
-
-#textcontent {
-  float:left;
+p.credits {
+  color: #BBB;
+  text-align: right;
 }
 
 /* Awards page */
 .awardsimg {
-  float:right;
   margin:0 0 1em 1em;
 }
