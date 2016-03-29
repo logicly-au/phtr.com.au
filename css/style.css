@@ -1,301 +1,115 @@
+/* General styling for entire site */
 body {
   margin:0;
   padding:0;
-  font-family: Arial, Helvetica, Verdana, sans-serif;
-  color:#fff;
-  background-color:#000;
-  font-size:.8em;
-  line-height:1.3em;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color:#ccc;
+  background-color: rgba(26, 26, 26, 1);
+  font-size:.9em;
+  line-height:1.6em;
 }
 
-body.splash {
-  background:url(/img/homebg.gif) top center no-repeat #000;
+a {
+  text-decoration:underline;
+  color:#ccc;
 }
 
-body.splash #titlebottom a {
-  display: none;
+a:hover,
+a:focus {
+  text-decoration:none;
+  color: #d83627;
 }
 
-
-#content {
-  width:1000px;
-  margin:0 auto;
+img {
+  border:0;
 }
-a {text-decoration:underline; color:#fff;}
-a:hover {text-decoration:none;}
 
-img {border:0;}
-
-h1, h2 {
+h1,
+h2 {
   text-transform:uppercase;
   font-weight:normal;
-line-height: 1.2em;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: #d83627;
+}
+
+a,
+strong {
+  color: #BBB;
 }
 
 h2, h3, h4 {
   margin-top:2em;
 }
 
+ul li {
+  margin: 1em 0;
+}
+
+/* Header and footer styling */
 #head {
-  height:40px;
   width:100%;
-  padding-bottom:20px;
+  height: 65px;
+  border-bottom:1px solid #ccc;
 }
 
 #foot {
   height:40px;
   width:100%;
-  clear:both;
+  margin-top: 1em;
 }
 
-#head img {
-  margin-top:20px;
-  margin-right:20px;
+#leftfoot,
+#rightfoot,
+#lefthead,
+#righthead {
+  position:relative;
+  display:inline-block;
 }
 
-#lefthead, #righthead, #leftfoot, #rightfoot {
-  width:40px;
-  height:40px;
+#lefthead,
+#righthead {
+  top:5%;
 }
+
+#lefthead,
+#leftfoot {
+  left:2%;
+}
+
+#righthead,
+#rightfoot {
+  left:90%;
+}
+
 #lefthead {
-  float:left;
-  border-bottom:1px solid #fff;
-  border-right:1px solid #fff;
-  margin:8px 0 0 4%;
+  border-bottom:1px solid #ccc;
+  border-right:1px solid #ccc;
 }
 
 #righthead {
-  margin:8px 4% 0 0;
-  float:right;
-  border-bottom:1px solid #fff;
-  border-left:1px solid #fff;
+  border-bottom:1px solid #ccc;
+  border-left:1px solid #ccc;
 }
 
 #leftfoot {
-  margin:10px 0 10px 4%;
-  float:left;
-  border-top:1px solid #fff;
-  border-right:1px solid #fff;
+  border-top:1px solid #ccc;
+  border-right:1px solid #ccc;
 }
 
 #rightfoot {
-  margin:10px 4% 10px 0;
-  float:right;
-  border-top:1px solid #fff;
-  border-left:1px solid #fff;
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
 }
 
-#viewport {
-  width:100%;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
+#lefthead,
+#righthead,
+#leftfoot,
+#rightfoot {
+  width:40px;
+  height:40px;
 }
 
-#leftcol {
-  float:left;
-  width:8%;
-  text-align:left;
-  padding-top:350px;
-}
-
-#rightcol {
-  float:left;
-  width:8%;
-  text-align:right;
-  padding-top:350px;
-}
-
-#maincol {
-    margin: 0 auto;
-    width: 830px;
-    text-align:justify;
-  }
-
-#maincol h1 {
-  font-size:1.7em;
-  margin-top:8px;
-  margin-bottom:16px;
-  padding-bottom:0;
-  font-weight:normal;
-  text-align:left;
-}
-
-#maincol p {
-
-}
-
-#centerthis {
-  width:820px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:justify;
-}
-
-li {
-  margin-bottom:.6em;
-}
-
-/* Splash page */
-
-.keywords {
-  text-transform:uppercase;
-}
-
-h1.heading {
-  margin-top: 115px;
-  margin-bottom:170px;
-  line-height:1.3;
-  font-weight:bold;
-}
-
-h1.heading a {
-  color: #fff;
-  font-size: 2.2em;
-  text-decoration:none;
-}
-
-h1.heading a:hover {
-  text-decoration:none;
-  color:#ff0000;
-}
-
-.architects, .names {
-  font-size: .4em;
-  font-weight:normal;
-  letter-spacing:.15em;
-}
-
-.names {
-  margin-top:.2em;
-  margin-right:.9em;
-	font-size:.35em;
-}
-
-
-
-/* Profile page */
-
-.profileimg {
-  float:right;
-  margin:20px 0 0 16px;
-  border:0px solid #fff;
-}
-
-#nrintro {
-  text-align:left;
-  width:100%;
-  line-height:1.4em;
-  font-size:1.1em;
-}
-
-#nrintro p {
-  margin-top:0;
-  margin-bottom:1em;
-}
-
-.profilecontact {
-  font-weight:bold;
-}
-
-.biohead {
-  font-size:1em;
-}
-.quals {font-size:.85em;}
-
-#toby, #anna {
-  padding-top:1em;
-  text-align:left;
-}
-
-
-
-/* Projects main page */
-
-.projects a img {border:2px solid #000;}
-.projects a:hover img {border:2px solid #fff;}
-
-.projects .gallerycol01 {
-  padding-top:80px;
-}
-.projects .gallerycol02 {
-  padding:0 11px;
-}
-.projects .galleryitem  {
-  padding-bottom:20px;
-  display:block;
-width:190px;
-height:127px;
-text-align:center;
-float:left;
-padding-right:10px;
-vertical-align:middle;
-}
-
-/* individual project page */
-
-#leftgallery {
-  width:380px;
-  float:left;
-}
-.projects #gallery {
-  clear:both;
-  margin-top:1em;
-  text-align:justify;
-  width:380px;
-}
-
-#fullsize {
-  float:right;
-  margin-right:4px;
-  padding-bottom:20px;
-  width:400px;
-  text-align:right;
-}
-
-#textcontent {
-  float:left;
-}
-
-#projectsgal {
-  margin-bottom:1em;
-}
-
-.projects #gallery img {
-    margin-bottom:12px;
-}
-
-#gallery img {border:2px solid #000;}
-#gallery a:hover img {border:2px solid #fff;}
-
-#gallery a {text-decoration:none;}
-
-/* Art page */
-
-.gallerycol01, .gallerycol02, .gallerycol03 {
-  float:left;
-  text-align:center;
-}
-
-.left {
-  float:left;
-}
-
-.right {
-  float:right;
-}
-
-
-/* Publications page */
-
-
-.awardsimg {
-  float:right;
-  margin:0 0 1em 1em;
-}
-
-/* Title strip */
-
+/* Footer Styling */
 #titletop {
   width:100%;
   border-bottom:1px solid #cbcbcb;
@@ -321,8 +135,9 @@ vertical-align:middle;
   display:block;
 }
 
-#titlebottom a:hover {
-  color:#ff0000;
+#titlebottom a:hover,
+#titlebottom a:focus {
+  color:#d83627;
 }
 
 #titlebarinner {
@@ -336,9 +151,6 @@ vertical-align:middle;
 
 }
 
-
-
-
 .nav {
   float:left;
   border:0;
@@ -347,16 +159,19 @@ vertical-align:middle;
 .nav a {
   display:block;
   text-decoration:none;
-  color:#fff;
+  color:#ccc;
   text-transform:uppercase;
+  font-size: .9em;
 }
 
-.nav a:hover, #name a:hover {
+.nav a:hover,
+.nav a:focus {
   font-weight:bold;
-  color:#ff0000;
+  color:#d83627;
 }
 
-.projectslink, .relatedlink {
+.projectslink,
+.relatedlink {
   text-align:center;
   display:block;
   padding:3px 0 3px 0;
@@ -372,21 +187,21 @@ vertical-align:middle;
 }
 
 #tobyreed {
-    height: auto;
-    padding-top: 20px;
-    text-align: center;
-    width: 220px;
+  height: auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 220px;
 }
 
 #peterhogg {
-    padding-top: 20px;
-    text-align: center;
-    width: 130px;
+  padding-top: 20px;
+  text-align: center;
+  width: 130px;
 }
 
 #aboutcontact {
-    text-align: center;
-    width: 240px;
+  text-align: center;
+  width: 240px;
 }
 
 .awardsitem {
@@ -399,4 +214,160 @@ vertical-align:middle;
   display: block;
   width: 100%;
   float: left;
+}
+
+/* Layout options for all pages */
+#viewport {
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#content {
+  width:1000px;
+  margin:2em auto;
+  background-color:rgba(46,46,46, 0.8);
+  padding-bottom: 1.5em;
+}
+
+#maincol {
+  margin: 0 auto;
+  width: 830px;
+  text-align:justify;
+}
+
+#maincol h1 {
+  font-size:1.7em;
+  margin-top:8px;
+  margin-bottom:16px;
+  padding-bottom:0;
+  font-weight:normal;
+  text-align:left;
+}
+
+#centerthis {
+  width:820px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:justify;
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
+/* Splash page */
+body.splash {
+  background:url(/img/homebg.gif) top center no-repeat rgba(26, 26, 26, 1);
+}
+
+body.splash #titlebottom a {
+  display: none;
+}
+
+.keywords {
+  text-transform:uppercase;
+}
+
+h1.heading {
+  margin-top: 115px;
+  margin-bottom:170px;
+  line-height:1.3;
+  font-weight:bold;
+}
+
+h1.heading a {
+  color: #ccc;
+  font-size: 2.2em;
+  text-decoration:none;
+}
+
+h1.heading a:hover,
+h1.heading a:focus {
+  text-decoration:none;
+  color:#d83627;
+}
+
+.architects, .names {
+  font-size: .4em;
+  font-weight:normal;
+  letter-spacing:.15em;
+}
+
+.names {
+  margin-top:.2em;
+  margin-right:.9em;
+	font-size:.35em;
+}
+
+/* Projects main page */
+.projects a img {
+  border:2px solid rgba(26, 26, 26, 0.8);
+}
+
+.projects a:hover img,
+.projects a:focus img {
+  border:2px solid #ccc;
+}
+
+.projects .galleryitem  {
+  padding-bottom:20px;
+  display:block;
+  width:190px;
+  height:127px;
+  text-align:center;
+  float:left;
+  padding-right:10px;
+  vertical-align:middle;
+}
+
+/* individual project page */
+#leftgallery {
+  width:380px;
+  float:left;
+}
+
+#gallery {
+  clear:both;
+  margin-top:1em;
+  text-align:justify;
+  width:380px;
+}
+
+#gallery a {
+  text-decoration:none;
+}
+
+#gallery img {
+  margin-bottom:12px;
+  border:2px solid rgba(26, 26, 26, 0.8);
+}
+#gallery a:hover img,
+#gallery a:focus img {
+  border:2px solid #ccc;
+}
+
+#fullsize {
+  float:right;
+  margin-right:4px;
+  padding-bottom:20px;
+  width:400px;
+  text-align:right;
+}
+
+#textcontent {
+  float:left;
+}
+
+/* Awards page */
+.awardsimg {
+  float:right;
+  margin:0 0 1em 1em;
 }
