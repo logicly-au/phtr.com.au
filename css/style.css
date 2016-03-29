@@ -28,7 +28,6 @@ h1,
 h2 {
   text-transform:uppercase;
   font-weight:normal;
-  font-family: Georgia, Times, 'Times New Roman', serif;
   text-align: left;
   line-height:1.6em;
 }
@@ -237,7 +236,6 @@ a.social_icon:focus img {
   margin-bottom:16px;
   padding-bottom:0;
   font-weight:normal;
-  text-align:left;
 }
 
 .navigation_arrow {
@@ -279,7 +277,7 @@ body.splash .navigation_arrow {
   text-transform:uppercase;
 }
 
-h1.heading {
+body.splash #maincol h1.heading {
   margin-top: 115px;
   margin-bottom:170px;
   line-height:1.3;
@@ -287,14 +285,18 @@ h1.heading {
   text-align: center;
 }
 
-h1.heading a {
+body.splash #maincol h1.heading a {
   color: #ccc;
   font-size: 2.2em;
   text-decoration:none;
 }
 
-h1.heading a:hover,
-h1.heading a:focus {
+body.splash #content {
+  background-color: rgba(26, 26, 26, 0);
+}
+
+body.splash #maincol h1.heading a:hover,
+body.splash #maincol h1.heading a:focus {
   text-decoration:none;
   color:#d83627;
 }
@@ -474,5 +476,8 @@ p.credits {
   }
   #maincol {
     padding: .5em;
+  }
+  p.credits {
+    text-align: left;
   }
 }
