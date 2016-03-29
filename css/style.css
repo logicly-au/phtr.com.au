@@ -56,6 +56,7 @@ ul li {
   width:100%;
   height: 65px;
   border-bottom:1px solid #ccc;
+  padding-top: .5em;
 }
 
 #foot {
@@ -116,69 +117,43 @@ ul li {
 }
 
 /* Footer Styling */
-#titletop {
-  width:100%;
-  border-bottom:1px solid #cbcbcb;
-  clear:both;
-  padding-top:16px;
+#footer {
+  margin-top: 20px;
 }
 
-#titlebottom {
-  width:100%;
-  border-top:1px solid #cbcbcb;
-  margin-top:4px;
-  margin-bottom:10px;
-  clear:both;
-  text-align:center;
-}
-
-#titlebottom a {
-  color:#7f7f7f;
-  text-transform:uppercase;
-  font-weight:normal;
-  text-decoration:none;
-  padding-top:1em;
-  display:block;
-}
-
-#titlebottom a:hover,
-#titlebottom a:focus {
-  color:#d83627;
-}
-
-#titlebarinner {
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:0;
-  padding-left:100px;
-  width:915px;
-  clear:both;
-  text-transform:uppercase;
-
-}
-
-.nav {
-  float:left;
-  border:0;
-}
-
-.nav a {
-  display:block;
-  text-decoration:none;
-  color:#ccc;
-  text-transform:uppercase;
-  font-size: .9em;
-}
-
-.nav a:hover,
-.nav a:focus {
+#footer a:hover,
+#footer a:focus {
   font-weight:bold;
   color:#d83627;
 }
 
+#footer_borders {
+  border-top:1px solid #cbcbcb;
+  border-bottom:1px solid #cbcbcb;
+}
+
+#footer_info {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_item {
+  min-width: 180px;
+  text-align:center;
+}
+
 .projectslink,
 .relatedlink {
-  text-align:center;
   display:block;
   padding:3px 0 3px 0;
   height:16px;
@@ -188,38 +163,27 @@ ul li {
   margin-bottom:4px;
 }
 
-#projectsawards {
-  width:169px;
+.footer_item a {
+  text-decoration:none;
+  color:#ccc;
+  text-transform:uppercase;
+  font-size: .9em;
 }
 
-#tobyreed {
-  height: auto;
-  padding-top: 20px;
-  text-align: center;
-  width: 220px;
+#footer_home {
+  width:100%;
+  margin-top:4px;
+  margin-bottom:10px;
+  text-align:center;
 }
 
-#peterhogg {
-  padding-top: 20px;
-  text-align: center;
-  width: 130px;
-}
-
-#aboutcontact {
-  text-align: center;
-  width: 240px;
-}
-
-.awardsitem {
-	float:left;
-	padding:6px;
-	margin-bottom:1em;
-}
-
-#awardspublications {
-  display: block;
-  width: 100%;
-  float: left;
+#footer_home a {
+  color:#7f7f7f;
+  text-transform:uppercase;
+  font-weight:normal;
+  text-decoration:none;
+  padding-top:1em;
+  display:block;
 }
 
 /* Layout options for all pages */
@@ -446,11 +410,22 @@ p.credits {
   img {
     max-width: 350px;
   }
+  #righthead,
+  #rightfoot {
+    left: 87%;
+  }
+  #content {
+    margin: 0;
+  }
+  #maincol {
+    padding: .5em;
+  }
 }
 
 @media all and (max-width: 500px) {
   .projects-list,
-  .row  {
+  .row,
+  #footer_info  {
     /* On small screens, we are no longer using row direction but column */
     flex-direction: column;
     width: 100%;
@@ -464,5 +439,15 @@ p.credits {
   }
   img {
     max-width: 250px;
+  }
+  #righthead,
+  #rightfoot {
+    left: 75%;
+  }
+  #content {
+    margin: 0;
+  }
+  #maincol {
+    padding: .5em;
   }
 }
