@@ -186,6 +186,31 @@ ul li {
   display:block;
 }
 
+.socialfoot {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+a.social_icon {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+}
+
+a.social_icon img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  border: 2px solid #ccc;
+  background-color: #EEE;
+}
+
+a.social_icon:hover img,
+a.social_icon:focus img {
+  opacity: 1;
+}
+
 /* Layout options for all pages */
 #content {
   max-width: 1000px;
