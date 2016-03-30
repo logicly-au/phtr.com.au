@@ -269,6 +269,7 @@ body.splash #footer_home a {
 
 body.splash .navigation_arrow {
   opacity: 0;
+  cursor: default;
 }
 
 body.splash #maincol h1.heading {
